@@ -1,17 +1,17 @@
 nav {
-    padding: .7rem 1.5rem;
-    border-bottom: 1px solid #fff;
+    padding: 1.5rem;
+    /* border-bottom: 1px solid #fff; */
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 /* Home Page styling starts */
 .home-container {
-    padding: 0 2rem;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .post {
@@ -21,24 +21,22 @@ nav {
 }
 .post>img {
     width: 100%;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 .post>p,
 .post>h3 {
-    padding: 0 .5rem;
-    opacity: 0.5;
+    padding: 0.2rem 1rem;
 }
 .post>p {
-    font-size: 1.2rem;
-    margin: 0.3rem 0;
+    font-size: 1.5rem;
 }
 .post>h3 {
     font-size: 1.4rem;
     margin: .5rem 0 .7rem;
 }
 
-/* Details Page styling starts */
+
 .details-container {
     padding: 0 2rem;
 }
@@ -58,20 +56,3 @@ nav {
     font-size: 1.4rem;
 }
 
-@media screen and (max-width: 992px) {
-    .home-container {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .home-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .home-container {
-        grid-template-columns: 1fr;
-    }
-}

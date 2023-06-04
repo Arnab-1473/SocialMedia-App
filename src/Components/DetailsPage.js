@@ -10,7 +10,7 @@ const DetailsPage = () => {
     <div className='details-container'>
       <h2>Details Page For Post With ID {post.id}</h2>
       <img src={`https://picsum.photos/200?random=${post.id}`} alt={post.title} />
-      <p>User ID: {post.userId}</p>
+      <h2>User ID: {post.userId}</h2>
       <h3>Title: {post.title}</h3>
       <p>Body: {post.body}</p>
   </div>
